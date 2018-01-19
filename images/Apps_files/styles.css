@@ -1,0 +1,12 @@
+th,
+td {
+    text-align: center;
+}
+
+.blink-text {
+    text-decoration: blink;
+}
+
+.text-left {
+    text-align: left;
+}

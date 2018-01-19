@@ -1,0 +1,28 @@
+th,
+td {
+    text-align: center;
+}
+
+.blink-text {
+    text-decoration: blink;
+}
+
+.text-left {
+    text-align: left;
+}
+
+h4 {
+    padding: 20px;
+}
+
+.delayed {
+    background: #f15860;
+}
+
+.warning {
+    background: #ffbd2e;
+}
+
+.ontime {
+    background: #61bc65;
+}
