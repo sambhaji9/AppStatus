@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wielder</title>
+
+    <script src="./lib/jquery-3.2.1.min.js"></script>
+    <script src="./lib/popper.min.js"></script>
+    <script src="./lib/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./wielder.css">
+
+    <script src="./wielder.js"></script>
+    <script src="./lib/bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="./lib/bootstrap-datepicker.css">
+</head>
+
+<body>
+    <button id="btnAddNewApp" class="btn btn-success" data-toggle="tooltip" data-placement="left" title="Add New app">Add</button>
+
+    <!-- Modal to add new app -->
+    <div class="modal fade" id="newAppModal" tabindex="-1" role="dialog" aria-labelledby="newAppModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add New App</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label for="appName" class="col-sm-3 col-form-label">App Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputAppName">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputDeadline" class="col-sm-3 col-form-label">Deadline</label>
+                        <div class="col-sm-9">
+                            <!-- <input type="text" class="form-control" id="inputDeadline"> -->
+                            <div class="input-group date" data-provide="datepicker">
+                                <input type="text" class="form-control">
+                                <div class="input-group-addon">
+                                    <span class="glyphicon glyphicon-th"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputStatus" class="col-sm-3 col-form-label">Status</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="inputStatus">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputSection" class="col-sm-3 col-form-label">Section</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="inputSection">
+                                <option>-- Select --</option>
+                                <option>Ongoing apps and Hard-Booked</option>
+                                <option>Waiting apps and Soft-booked</option>
+                                <option>Not booked and Action needed USA/Germany</option>
+                                <option>Done Apps</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="saveNewApp">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
