@@ -2,6 +2,7 @@
 var express = require("express");
 var app = express();
 
+// serve the static files from the public folder
 app.use(express.static("public"));
 
 app.get("/wielder.html", function(request, response) {
@@ -21,4 +22,9 @@ var data = [{
     "deadline": "15-Jan-2018",
     "status": "On-time",
     "section": "Ongoing"
+}, {
+    "name": "Labormedizin app",
+    "deadline": "30-Apr-2018",
+    "status": "Waiting",
+    "section": "Soft-booked"
 }];
