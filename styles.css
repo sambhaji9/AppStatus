@@ -1,3 +1,8 @@
+body {
+    font-family: "American typewriter";
+    letter-spacing: 1px;
+}
+
 th,
 td {
     text-align: center;
@@ -15,6 +20,10 @@ h4 {
     padding: 20px;
 }
 
+h5 {
+    padding-left: 20px;
+}
+
 .delayed {
     background: #f15860;
 }
@@ -25,4 +34,8 @@ h4 {
 
 .ontime {
     background: #61bc65;
+}
+
+p {
+    padding-left: 20px;
 }
